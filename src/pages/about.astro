@@ -1,5 +1,5 @@
 ---
-import Navigation from '../components/Navigation.astro'
+import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import '../styles/global.css'
 
@@ -38,7 +38,7 @@ h1 {
 		</style>
 	</head>
 	<body>
-		<Navigation />
+		<Header />
 		<h1>About Me</h1>
 		<h2>... and my new Astro site!</h2>
 		<p>Here are a few facts about me:</p>
@@ -60,4 +60,7 @@ h1 {
 		{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 	</body>
     <Footer />
+	<script>
+		import '../scripts/menu'
+	</script>
 </html>
